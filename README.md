@@ -136,9 +136,10 @@ animation:cursorblink 1s infinite;
 
 <br>
 
-<a href="logs.html"> everyone</a>
-<a href="network.html"> always</a>
-<a href="about.html"> connected</a>
+
+<a href="https://youtu.be/vsjJhW0FEHE?si=jpNvX0l7pXfAPW7z"> everyone</a>
+<a href="[network.html](https://youtu.be/T0xCK6J1ics?si=-1dIIS7IPgQfzcuX)"> always</a>
+<a href="[about.html](https://youtu.be/j0pvoSl2Es0?feature=shared)"> connected</a>
 
 </div>
 
