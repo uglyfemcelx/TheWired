@@ -126,9 +126,9 @@ animation:cursorblink 1s infinite;
 
 <br>
 
-<a href="we are.html">everyone</a>
-<a href="always.html">always</a>
-<a href="connected.html">conncted</a>
+<a href="logs.html">> open logs</a>
+<a href="network.html">> access network</a>
+<a href="about.html">> user info</a>
 
 </div>
 
