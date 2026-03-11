@@ -193,12 +193,11 @@ animation:scan 8s linear infinite;
 
 <div class="wiredpic">
 
-<img src="[ee86ae8f568ecdd24f432af7157ca18c.jpg](https://github.com/uglyfemcelx/lainiwakura/blob/3d5c781f46b5ecadb044c2df329c0ee6487c90ad/ee86ae8f568ecdd24f432af7157ca18c.jpg)" width="300">
+![image alt](https://github.com/uglyfemcelx/lainiwakura/blob/3d5c781f46b5ecadb044c2df329c0ee6487c90ad/ee86ae8f568ecdd24f432af7157ca18c.jpg)
 
+<br><br>
 
-</div>
-
-<p>> connected to the wired<
+<p>> connected to the wired</p>
 
 
 <div class="box">
