@@ -124,6 +124,8 @@ animation:cursorblink 1s infinite;
 
 ![image alt](https://github.com/uglyfemcelx/lainiwakura/blob/3d5c781f46b5ecadb044c2df329c0ee6487c90ad/ee86ae8f568ecdd24f432af7157ca18c.jpg)
 
+</div>
+
 <p>> connected to the wired<
 
 
