@@ -175,6 +175,11 @@ animation:scan 8s linear infinite;
 100%{transform:translateY(100%);}
 }
 
+
+.lainimg{
+width:220px;
+image-rendering:pixelated;
+}
   
 </style>
 
