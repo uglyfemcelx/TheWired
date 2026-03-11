@@ -107,25 +107,6 @@ animation:cursorblink 1s infinite;
 100%{opacity:1;}
 }
 
-</style>
-
-</head>
-
-<body>
-
-<h1>WELCOME TO THE WIRED</h1>
-
-<p class="typing">present day • present time</p>
-
-<br><br>
-
-
-<center>
-
-<div class="wiredpic">
-
-<img src="[ee86ae8f568ecdd24f432af7157ca18c.jpg](https://github.com/uglyfemcelx/lainiwakura/blob/3d5c781f46b5ecadb044c2df329c0ee6487c90ad/ee86ae8f568ecdd24f432af7157ca18c.jpg)" width="300">
-
 /* image section */
 
 .wiredpic{
@@ -193,6 +174,27 @@ animation:scan 8s linear infinite;
 0%{transform:translateY(-100%);}
 100%{transform:translateY(100%);}
 }
+
+  
+</style>
+
+</head>
+
+<body>
+
+<h1>WELCOME TO THE WIRED</h1>
+
+<p class="typing">present day • present time</p>
+
+<br><br>
+
+
+<center>
+
+<div class="wiredpic">
+
+<img src="[ee86ae8f568ecdd24f432af7157ca18c.jpg](https://github.com/uglyfemcelx/lainiwakura/blob/3d5c781f46b5ecadb044c2df329c0ee6487c90ad/ee86ae8f568ecdd24f432af7157ca18c.jpg)" width="300">
+
 
 </div>
 
