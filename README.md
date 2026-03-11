@@ -247,34 +247,59 @@ animation:pulse 1.5s infinite;
 
 
 
-<script src="https://giscus.app/client.js"
-        data-repo="uglyfemcelx/lainiwakura"
-        data-repo-id="REPO_ID"
-        data-category="General"
-        data-category-id="CATEGORY_ID"
-        data-mapping="pathname"
-        data-strict="0"
-        data-reactions-enabled="0"
-        data-emit-metadata="0"
-        data-theme="dark"
-        crossorigin="anonymous"
-        async>
-</script>
+.lainguestbook{
+margin-top:50px;
+text-align:left;
+font-family:"Courier New", monospace;
+color:#00ff88;
+border:1px solid #00ff88;
+padding:20px;
+background:rgba(0,0,0,0.7);
+}
 
+/* terminal typing effect for the prompt */
+.guestprompt{
+display:inline-block;
+white-space:pre-line;
+overflow:hidden;
+border-right:2px solid #00ff88;
+width:0;
+animation:guestTyping 6s steps(120,end) forwards, cursor 1s infinite;
+}
 
-    <div class="guestbook">
+/* typing animation */
+@keyframes guestTyping{
+from{width:0}
+to{width:450px} /* adjust width for your text */
+}
 
-<p>> leave a message in the wired</p>
+/* cursor blink */
+@keyframes cursor{
+50%{border-color:transparent}
+}
 
-<script src="https://giscus.app/client.js"
-        data-repo="uglyfemcelx/lainiwakura"
-        data-mapping="pathname"
-        data-theme="dark"
-        crossorigin="anonymous"
-        async>
-</script>
+/* hover glitch effect */
+.guestprompt:hover{
+animation:glitch 0.2s infinite;
+}
+
+@keyframes glitch{
+0%{text-shadow:2px 0 red,-2px 0 blue;}
+25%{text-shadow:-2px 0 red,2px 0 blue;}
+50%{text-shadow:2px 2px red,-2px -2px blue;}
+75%{text-shadow:-2px -2px red,2px 2px blue;}
+100%{text-shadow:0 0 10px #00ff88;}
+}
+
+/* guestbox style */
+.guestbox{
+margin-top:20px;
+}
+
 
 </div>
+
+
 
   
 </style>
@@ -382,14 +407,40 @@ function toggleMusic(){
 
 <p>> connection stable<span class="cursor">_</span></p>
 
-.guestbook{
-border:1px solid #00ff88;
-padding:20px;
-margin-top:60px;
-background:rgba(0,0,0,0.7);
-font-family:"Courier New", monospace;
-color:#00ff88;
-}
+
+
+
+
+<div class="lainguestbook">
+
+  <p class="guestprompt">
+  > the wired hears you<br>
+  > leave a trace of yourself<br>
+  > enter, or fade into the void...
+  </p>
+
+  <div class="guestbox">
+    <script src="https://giscus.app/client.js"
+            data-repo="uglyfemcelx/lainiwakura"
+            data-repo-id="R_kgDORj1gxg"
+            data-category="Guestbook"
+            data-category-id="DIC_kwDORj1gxs4C4MTN"
+            data-mapping="pathname"
+            data-strict="0"
+            data-reactions-enabled="1"
+            data-emit-metadata="1"
+            data-input-position="top"
+            data-theme="preferred_color_scheme"
+            data-lang="en"
+            crossorigin="anonymous"
+            async>
+    </script>
+  </div>
+
+
+
+
+
 
 </body>
 
