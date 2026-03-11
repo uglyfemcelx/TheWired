@@ -186,6 +186,65 @@ display:block;
 margin:auto;
 box-shadow:0 0 20px #00ff88;
 }
+
+
+
+  .lainterminal{
+margin-top:60px;
+text-align:center;
+font-family:"Courier New", monospace;
+color:#00ff88;
+}
+
+/* glowing text */
+#quotebox{
+display:inline-block;
+text-align:left;
+white-space:pre-wrap;
+text-shadow:0 0 8px #00ff88;
+}
+
+/* glitch effect when hover */
+#quotebox:hover{
+animation:glitch 0.2s infinite;
+}
+
+@keyframes glitch{
+0%{text-shadow:2px 0 red,-2px 0 blue;}
+25%{text-shadow:-2px 0 red,2px 0 blue;}
+50%{text-shadow:2px 2px red,-2px -2px blue;}
+75%{text-shadow:-2px -2px red,2px 2px blue;}
+100%{text-shadow:0 0 10px #00ff88;}
+}
+
+/* music button style */
+#musicbtn{
+margin-top:30px;
+background:black;
+color:#00ff88;
+border:1px solid #00ff88;
+padding:10px 20px;
+font-family:"Courier New", monospace;
+cursor:pointer;
+transition:0.3s;
+}
+
+/* hover glow */
+#musicbtn:hover{
+box-shadow:0 0 15px #00ff88;
+}
+
+/* pulse when playing */
+.playing{
+animation:pulse 1.5s infinite;
+}
+
+@keyframes pulse{
+0%{box-shadow:0 0 5px #00ff88;}
+50%{box-shadow:0 0 20px #00ff88;}
+100%{box-shadow:0 0 5px #00ff88;}
+}
+
   
 </style>
 
@@ -195,10 +254,72 @@ box-shadow:0 0 20px #00ff88;
 
 <h1>WELCOME TO THE WIRED</h1>
 
-<p class="typing">present day • present time</p>
+<p class="typing">close the world • close the next</p>
 
 <br><br>
 
+<div class="lainterminal">
+
+<div id="quotebox"></div>
+
+<button id="musicbtn" onclick="toggleMusic()">▶ connect to the wired</button>
+
+<audio id="bgmusic" loop>
+  <source src="music.mp3" type="audio/mpeg">
+</audio>
+
+</div>
+
+<script>
+// quotes array
+const quotes = [
+"present day",
+"present time",
+"",
+"the wired is not bound by reality",
+"people only see what they want to see",
+"is the real world really real?",
+"everyone is connected"
+];
+
+const box = document.getElementById("quotebox");
+let i = 0;
+let charIndex = 0;
+
+function typeQuote(){
+    if(i < quotes.length){
+        let line = quotes[i];
+        if(charIndex < line.length){
+            box.innerHTML += line.charAt(charIndex);
+            charIndex++;
+            setTimeout(typeQuote, 50); // typing speed
+        } else {
+            box.innerHTML += "<br>";
+            i++;
+            charIndex = 0;
+            setTimeout(typeQuote, 400); // pause between quotes
+        }
+    }
+}
+
+typeQuote(); // start typing
+
+// music toggle
+let music = document.getElementById("bgmusic");
+let btn = document.getElementById("musicbtn");
+
+function toggleMusic(){
+    if(music.paused){
+        music.play();
+        btn.innerHTML = "❚❚ disconnect";
+        btn.classList.add("playing");
+    } else {
+        music.pause();
+        btn.innerHTML = "▶ connect to the wired";
+        btn.classList.remove("playing");
+    }
+}
+</script>
 
 <center>
 
