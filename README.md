@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html>
 
 <head>
@@ -126,9 +126,9 @@ animation:cursorblink 1s infinite;
 
 <br>
 
-<a href="we are.html">logs</a>
-<a href="always.html">network</a>
-<a href="connected.html">about</a>
+<a href="we are.html">everyone</a>
+<a href="always.html">always</a>
+<a href="connected.html">conncted</a>
 
 </div>
 
