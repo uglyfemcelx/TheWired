@@ -376,6 +376,12 @@ function toggleMusic(){
 <a href="https://youtu.be/j0pvoSl2Es0?feature=shared"> connected</a>
 
 
+</div>
+
+<br>
+
+<p>> connection stable<span class="cursor">_</span></p>
+
 .guestbook{
 border:1px solid #00ff88;
 padding:20px;
@@ -384,12 +390,6 @@ background:rgba(0,0,0,0.7);
 font-family:"Courier New", monospace;
 color:#00ff88;
 }
-
-</div>
-
-<br>
-
-<p>> connection stable<span class="cursor">_</span></p>
 
 </body>
 
