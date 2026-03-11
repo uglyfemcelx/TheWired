@@ -124,7 +124,7 @@ animation:cursorblink 1s infinite;
 
 <img src="https://github.com/uglyfemcelx/lainiwakura/commit/1afc27e1ec6f1be378e554d5356a67ea1d770a91" width="300" class="lainimg">
 
-<p>> connected to the wired</p>
+<p>> connected to the wired<
 
 </center>
 
@@ -138,8 +138,8 @@ animation:cursorblink 1s infinite;
 
 
 <a href="https://youtu.be/vsjJhW0FEHE?si=jpNvX0l7pXfAPW7z"> everyone</a>
-<a href="[network.html](https://youtu.be/T0xCK6J1ics?si=-1dIIS7IPgQfzcuX)"> always</a>
-<a href="[about.html](https://youtu.be/j0pvoSl2Es0?feature=shared)"> connected</a>
+<a href="https://youtu.be/T0xCK6J1ics?si=-1dIIS7IPgQfzcuX"> always</a>
+<a href="https://youtu.be/j0pvoSl2Es0?feature=shared"> connected</a>
 
 </div>
 
