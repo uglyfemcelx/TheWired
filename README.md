@@ -119,6 +119,16 @@ animation:cursorblink 1s infinite;
 
 <br><br>
 
+
+<center>
+
+<img src="lain.green.everyonealwaysconnected.jpg" width="300" class="lainimg">
+
+<p>> connected to the wired</p>
+
+</center>
+
+
 <div class="box">
 
 <p>> user : guest</p>
