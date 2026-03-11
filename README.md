@@ -48,12 +48,6 @@ a:hover{
   margin:auto;
 }
 
-</style>
-
-</head>
-
-<body>
-
 <h1>WELCOME TO THE WIRED</h1>
 
 <div class="box">
