@@ -2,9 +2,6 @@
 <html>
 
 <head>
-<title>uglyfoid's website</title>
-
-<style>
 
 body{
   background:black;
@@ -44,9 +41,7 @@ a:hover{
 .box{
   border:1px solid #00ff9f;
   padding:20px;
-  width:300px;
-  margin:auto;
-}
+  width:300px
 
 <h1>WELCOME TO THE WIRED</h1>
 
