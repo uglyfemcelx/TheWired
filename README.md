@@ -260,7 +260,22 @@ animation:pulse 1.5s infinite;
         crossorigin="anonymous"
         async>
 </script>
-    
+
+
+    <div class="guestbook">
+
+<p>> leave a message in the wired</p>
+
+<script src="https://giscus.app/client.js"
+        data-repo="uglyfemcelx/lainiwakura"
+        data-mapping="pathname"
+        data-theme="dark"
+        crossorigin="anonymous"
+        async>
+</script>
+
+</div>
+
   
 </style>
 
@@ -359,6 +374,16 @@ function toggleMusic(){
 <a href="https://youtu.be/vsjJhW0FEHE?si=jpNvX0l7pXfAPW7z"> everyone</a>
 <a href="https://youtu.be/T0xCK6J1ics?si=-1dIIS7IPgQfzcuX"> always</a>
 <a href="https://youtu.be/j0pvoSl2Es0?feature=shared"> connected</a>
+
+
+.guestbook{
+border:1px solid #00ff88;
+padding:20px;
+margin-top:60px;
+background:rgba(0,0,0,0.7);
+font-family:"Courier New", monospace;
+color:#00ff88;
+}
 
 </div>
 
