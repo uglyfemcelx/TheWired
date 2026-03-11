@@ -265,7 +265,7 @@ animation:pulse 1.5s infinite;
 <button id="musicbtn" onclick="toggleMusic()">▶ connect to the wired</button>
 
 <audio id="bgmusic" loop>
-  <source src="music.mp3" type="audio/mpeg">
+  <source src="https://github.com/uglyfemcelx/lainiwakura/blob/62fea5c8dbeb8e2a4fe4574595c9fb57def27442/Ghost's%20Cell%20%5BnDDtWZMziW4%5D.mp3" type="audio/mpeg">
 </audio>
 
 </div>
