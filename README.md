@@ -122,7 +122,7 @@ animation:cursorblink 1s infinite;
 
 <center>
 
-<img src="lain.green.everyonealwaysconnected.jpg" width="300" class="lainimg">
+<img src="https://github.com/uglyfemcelx/lainiwakura/commit/1afc27e1ec6f1be378e554d5356a67ea1d770a91" width="300" class="lainimg">
 
 <p>> connected to the wired</p>
 
