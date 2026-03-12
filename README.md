@@ -382,7 +382,7 @@ margin-top:20px;
 
   #wiredTrigger{
 color:#00ff88;
-font-family:monospace;
+font-family:"Courier New",monospace;
 text-align:center;
 margin-top:350px;
 cursor:pointer;
@@ -399,11 +399,28 @@ max-width:520px;
 
 #terminal{
 color:#00ff88;
-font-family:monospace;
+font-family:"Courier New",monospace;
 white-space:pre-wrap;
 }
 
+.cursor{
+display:inline-block;
+width:10px;
+background:#00ff88;
+margin-left:5px;
+animation:blink 1s infinite;
+}
 
+@keyframes blink{
+0%{opacity:1;}
+50%{opacity:0;}
+100%{opacity:1;}
+}
+
+
+
+
+  
   
 </style>
 
