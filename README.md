@@ -370,15 +370,31 @@ margin-top:20px;
 }
 
 
+/*secret main site*/
+.wirednodes{
+margin-top:200px;
+text-align:center;
+font-family:monospace;
+}
+
+.wirednodes a{
+display:block;
+color:#00ff88;
+margin:10px;
+text-decoration:none;
+}
+
+.wirednodes a:hover{
+text-shadow:0 0 8px #00ff88;
+}
+    
+
 
 
     
-
 </div>
 
 /*surprised */
-
-
 
   #wiredTrigger{
 color:#00ff88;
