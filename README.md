@@ -570,6 +570,18 @@ function toggleMusic(){
 
 <a href="https://uglyfemcelx.github.io/deepwired/" class="node">deep_layer</a>
 
+
+<div class="wiredmap">
+node_01
+   │
+  core
+   │
+node_02
+├──── memory_archive
+└──── deep_layer
+</div>
+
+
 </div>
 
 
