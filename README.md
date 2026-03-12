@@ -546,7 +546,7 @@ function toggleMusic(){
 <p>> user : guest</p>
 <p>> access node : uglyfoid network</p>
 
-<br>
+
 <div class="wiredmap">
 
 <a href="https://uglyfemcelx.github.io/node01/" class="node">node_01</a>
@@ -578,6 +578,7 @@ node_01
 node_02
 ├──── memory_archive
 └──── deep_layer
+  
 </div>
 
 
