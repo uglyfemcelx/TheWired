@@ -377,7 +377,10 @@ margin-top:20px;
 </div>
 
 /*surprised */
-#wiredTrigger{
+
+
+
+  #wiredTrigger{
 color:#00ff88;
 font-family:monospace;
 text-align:center;
@@ -387,16 +390,18 @@ cursor:pointer;
 
 #wiredSecret{
 display:none;
-color:#00ff88;
-font-family:monospace;
 background:black;
 border:1px solid #00ff88;
 padding:20px;
 margin:40px auto;
 max-width:520px;
-line-height:1.6;
 }
 
+#terminal{
+color:#00ff88;
+font-family:monospace;
+white-space:pre-wrap;
+}
 
 
   
@@ -632,19 +637,38 @@ loadMessages()
 <div id="wiredTrigger">dive down deeper into the wired…</div>
 
 <div id="wiredSecret">
-<p>> you’ve wandered deeper into the wired…</p>
-<p>> fragments of thought flicker past…</p>
-<p>> something watches. something whispers.</p>
-<p>> are you still yourself?</p>
-<p>> or just a signal in the void?</p>
+<pre id="terminal"></pre>
 </div>
 
-
-
 <script>
+
+const wiredLines = [
+"> you’ve wandered deeper into the wired…",
+"> fragments of thought flicker past…",
+"> something watches. something whispers.",
+"> are you still yourself?",
+"> or just a signal in the void?"
+]
+
 document.getElementById("wiredTrigger").onclick = function(){
-document.getElementById("wiredSecret").style.display = "block";
+
+document.getElementById("wiredSecret").style.display="block"
+
+let i = 0
+let terminal = document.getElementById("terminal")
+
+function typeLine(){
+if(i < wiredLines.length){
+terminal.innerHTML += wiredLines[i] + "\n"
+i++
+setTimeout(typeLine, 1200)
 }
+}
+
+typeLine()
+
+}
+
 </script>
 
 </body>
