@@ -581,7 +581,6 @@ node_02
 </div>
 
 
-</div>
 
 
 <br>
@@ -591,7 +590,7 @@ node_02
 <a href="https://youtu.be/j0pvoSl2Es0?feature=shared"> connected</a>
 
 
-</div>
+<br>
 
 <p>> connection stable<span class="cursor">_</span></p>
 
