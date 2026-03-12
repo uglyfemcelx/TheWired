@@ -518,7 +518,20 @@ function toggleMusic(){
 <p>> access node : uglyfoid network</p>
 
 <br>
+<div class="wirednodes">
 
+<a href="https://uglyfemcelx.github.io/node01/">node_01</a>
+
+<a href="https://uglyfemcelx.github.io/node02/">node_02</a>
+
+<a href="https://uglyfemcelx.github.io/archive/">memory_archive</a>
+
+<a href="https://uglyfemcelx.github.io/deepwired/">deep_layer</a>
+
+</div>
+
+
+<br>
 
 <a href="https://youtu.be/vsjJhW0FEHE?si=jpNvX0l7pXfAPW7z"> everyone</a>
 <a href="https://youtu.be/T0xCK6J1ics?si=-1dIIS7IPgQfzcuX"> always</a>
@@ -526,8 +539,6 @@ function toggleMusic(){
 
 
 </div>
-
-<br>
 
 <p>> connection stable<span class="cursor">_</span></p>
 
