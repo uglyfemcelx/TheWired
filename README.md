@@ -373,13 +373,10 @@ margin-top:20px;
 /*secret main site*/
 
 .wiredmap{
-font-family:"Courier New", monospace;
-color:#00ff88;
-white-space:pre;
 text-align:center;
-margin-top:30px;
-line-height:1.5;
-text-shadow:0 0 8px #00ff88;
+font-family: "Courier New", monospace;
+color:#00ff88;
+margin-top:200px;
 }
 
 .node{
