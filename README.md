@@ -371,24 +371,36 @@ margin-top:20px;
 
 
 /*secret main site*/
-.wirednodes{
-margin-top:200px;
+
+.wiredmap{
 text-align:center;
-font-family:monospace;
+font-family: "Courier New", monospace;
+color:#00ff88;
+margin-top:200px;
 }
 
-.wirednodes a{
+.node{
 display:block;
 color:#00ff88;
-margin:10px;
 text-decoration:none;
+margin:5px;
 }
 
-.wirednodes a:hover{
-text-shadow:0 0 8px #00ff88;
+.core{
+display:block;
+color:#00ffaa;
+font-weight:bold;
+text-decoration:none;
+margin:5px;
 }
-    
 
+.line{
+margin:2px;
+}
+
+.node:hover{
+text-shadow:0 0 10px #00ff88;
+}
 
 
     
@@ -535,15 +547,25 @@ function toggleMusic(){
 <p>> access node : uglyfoid network</p>
 
 <br>
-<div class="wirednodes">
+<div class="wiredmap">
 
-<a href="https://uglyfemcelx.github.io/node01/">node_01</a>
+<a href="https://uglyfemcelx.github.io/node01/" class="node">node_01</a>
 
-<a href="https://uglyfemcelx.github.io/node02/">node_02</a>
+<div class="line">│</div>
 
-<a href="https://uglyfemcelx.github.io/archive/">memory_archive</a>
+<a href="https://uglyfemcelx.github.io/TheWired/" class="core">core</a>
 
-<a href="https://uglyfemcelx.github.io/deepwired/">deep_layer</a>
+<div class="line">│</div>
+
+<a href="https://uglyfemcelx.github.io/node02/" class="node">node_02</a>
+
+<div class="line">├────</div>
+
+<a href="https://uglyfemcelx.github.io/archive/" class="node">memory_archive</a>
+
+<div class="line">└────</div>
+
+<a href="https://uglyfemcelx.github.io/deepwired/" class="node">deep_layer</a>
 
 </div>
 
