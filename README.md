@@ -545,8 +545,6 @@ function toggleMusic(){
 
 <p>> user : guest</p>
 <p>> access node : uglyfoid network</p>
-
-
 <div class="wiredmap">
 
 <a href="https://uglyfemcelx.github.io/node01/" class="node">node_01</a>
@@ -671,10 +669,6 @@ loadMessages()
 
 
 
-
-<a href="https://youtu.be/vsjJhW0FEHE?si=jpNvX0l7pXfAPW7z"> everyone</a>
-<a href="https://youtu.be/T0xCK6J1ics?si=-1dIIS7IPgQfzcuX"> always</a>
-<a href="https://youtu.be/j0pvoSl2Es0?feature=shared"> connected</a>
 
 
 
