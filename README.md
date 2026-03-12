@@ -537,6 +537,19 @@ async function sendMessage() {
   }
 }
 
+  const errBox = document.createElement("div")
+  errBox.style.color = "red"
+  errBox.style.marginTop = "10px"
+  errBox.textContent = "wired error: " + error.message
+
+  document.body.appendChild(errBox)
+}
+
+
+
+  
+  
+
 async function loadMessages() {
   const { data } = await supabaseClient
     .from("message")
