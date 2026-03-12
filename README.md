@@ -245,7 +245,80 @@ animation:pulse 1.5s infinite;
 100%{box-shadow:0 0 5px #00ff88;}
 }
 
+  /*wiredguestbook*/
 
+body {
+  background: black;
+  color: #00ff88;
+  font-family: "Courier New", monospace;
+  text-align: center;
+  margin: 0;
+  padding: 20px;
+}
+
+.WiredGuestbook{
+  border:1px solid #00ff88;
+  padding:20px;
+  margin:50px auto;
+  max-width:600px;
+  background: rgba(0,0,0,0.85);
+  text-align:left;
+}
+
+.guestprompt{
+  margin-bottom: 10px;
+  white-space: pre-line;
+  overflow:hidden;
+  border-right:2px solid #00ff88;
+  animation: typing 5s steps(80,end) forwards, blink 1s infinite;
+}
+
+@keyframes typing{
+from{width:0}
+to{width:100%}
+}
+
+@keyframes blink{
+50%{border-color:transparent}
+}
+
+.WiredGuestbook input,
+.WiredGuestbook textarea{
+  width: 100%;
+  background: black;
+  color: #00ff88;
+  border:1px solid #00ff88;
+  font-family:"Courier New", monospace;
+  margin-bottom:10px;
+  padding:5px;
+}
+
+.WiredGuestbook button{
+  background:black;
+  color:#00ff88;
+  border:1px solid #00ff88;
+  padding:5px 10px;
+  cursor:pointer;
+}
+
+#messages p{
+  margin:5px 0;
+  text-shadow:0 0 3px #00ff88;
+  animation:glitch 2s infinite;
+}
+
+@keyframes glitch{
+0%{transform:translate(0);}
+20%{transform:translate(-1px,1px);}
+40%{transform:translate(1px,-1px);}
+60%{transform:translate(-1px,1px);}
+80%{transform:translate(1px,-1px);}
+100%{transform:translate(0);}
+}
+
+
+  
+/*giscusguestbook*/
 
 .lainguestbook{
 margin-top:50px;
@@ -406,6 +479,73 @@ function toggleMusic(){
 <br>
 
 <p>> connection stable<span class="cursor">_</span></p>
+
+
+<div class="WiredGuestbook">
+  <p class="guestprompt">
+&gt; you have entered the wired<br>
+&gt; leave a trace of yourself<br>
+&gt; type a message and it will echo...
+  </p>
+
+  <input type="text" id="username" placeholder="username (optional)">
+  <textarea id="message" placeholder="your message here"></textarea>
+  <button id="send">send</button>
+
+  <div id="messages"></div>
+</div>
+
+
+<!-- Supabase JS -->
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+<script>
+  // replace with your Supabase URL & anon key
+  const supabaseUrl = 'YOUR_SUPABASE_URL';
+  const supabaseKey = 'sb_publishable_hv7yqk9FOUF1T6RGBcYHdw_DKMa1IcI';
+  const supabase = supabase.createClient(supabaseUrl, supabaseKey);
+
+  const messagesDiv = document.getElementById('messages');
+  const sendBtn = document.getElementById('send');
+
+  async function loadMessages(){
+    const { data } = await supabase
+      .from('messages')
+      .select('*')
+      .order('created_at', { ascending: true });
+    messagesDiv.innerHTML = '';
+    data.forEach(msg => {
+      const p = document.createElement('p');
+      p.textContent = `> ${msg.username || 'user_anon'} entered the wired: ${msg.message}`;
+      messagesDiv.appendChild(p);
+    });
+  }
+
+  sendBtn.addEventListener('click', async () => {
+    const username = document.getElementById('username').value || 'user_anon';
+    const message = document.getElementById('message').value;
+    if(!message) return;
+    await supabase.from('messages').insert([{username,message}]);
+    document.getElementById('message').value = '';
+    loadMessages();
+  });
+
+  // initial load
+  loadMessages();
+
+  // live updates
+  supabase
+    .channel('public:messages')
+    .on('postgres_changes', { event: 'INSERT', schema: 'public', table: 'messages' }, payload => {
+      const msg = payload.new;
+      const p = document.createElement('p');
+      p.textContent = `> ${msg.username || 'user_anon'} entered the wired: ${msg.message}`;
+      messagesDiv.appendChild(p);
+    })
+    .subscribe();
+</script>
+
+
 
 
 
