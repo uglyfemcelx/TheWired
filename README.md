@@ -449,6 +449,10 @@ window.addEventListener('scroll', () => {
   
 </style>
 
+
+<head>
+  <meta charset="UTF-8">
+  <title>The Wired</title>  <!-- this MUST be exactly your new name -->
 </head>
 
 <body>
