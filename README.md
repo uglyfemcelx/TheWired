@@ -672,7 +672,7 @@ loadMessages()
 
 
 
-</div>
+<div>
 
 <a href="https://youtu.be/vsjJhW0FEHE?si=jpNvX0l7pXfAPW7z"> everyone</a>
 <a href="https://youtu.be/T0xCK6J1ics?si=-1dIIS7IPgQfzcuX"> always</a>
