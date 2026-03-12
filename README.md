@@ -378,18 +378,13 @@ margin-top:20px;
 
 /*surprised */
 
-#secretBox{
-  display:none;
-  position:fixed;
-  top:50%;
-  left:50%;
-  transform:translate(-50%,-50%);
-  background:black;
-  color:#00ff88;
-  border:1px solid #00ff88;
-  padding:20px;
-  font-family:monospace;
-  z-index:999;
+#wiredMessage{
+opacity:0;
+text-align:center;
+color:#00ff88;
+font-family:monospace;
+margin-top:400px;
+transition:opacity 2s;
 }
 
 
@@ -616,28 +611,25 @@ loadMessages()
 
 
 
-
-<a href="#" onclick="openBox()">enter deeper into the wired</a>
-
-<div id="secretBox">
-  <p>you should not have clicked that.</p>
-  <p>the wired noticed you.</p>
-  <button onclick="closeBox()">leave</button>
+<div id="wiredMessage">
+  <p>> you’ve wandered deeper into the wired…</p>
+  <p>> fragments of thought flicker past…</p>
+  <p>> something watches. something whispers.</p>
+  <p>> are you still yourself?</p>
+  <p>> or just a signal in the void?</p>
 </div>
 
-
 <script>
-function openBox(){
-  document.getElementById("secretBox").style.display = "block";
-}
+window.addEventListener("scroll", function() {
 
-function closeBox(){
-  document.getElementById("secretBox").style.display = "none";
-}
+  var message = document.getElementById("wiredMessage");
+
+  if (window.scrollY > 300) {
+    message.style.opacity = "1";
+  }
+
+});
 </script>
-
-
-
 
 
 
