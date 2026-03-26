@@ -751,7 +751,7 @@ const wiredLines = [
 "> ⍰⍰ ERROR // identity_mismatch",
 "> ⍰⍰ SIGNAL_LOST_IN_VOID",
 "dont check your closet :)",
-]
+ ]
 
 document.getElementById("wiredTrigger").onclick = function(){
 
