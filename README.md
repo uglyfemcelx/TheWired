@@ -713,7 +713,7 @@ loadMessages()
 <script>
 
 const wiredLines = [
-"> you’ve wandered deeper into the wired…",
+"> you tried wandered deeper into the wired…",
 "> fragments of thought flicker past…",
 "> something watches. something whispers.",
 "> are you still yourself?",
