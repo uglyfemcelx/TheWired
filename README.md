@@ -33,7 +33,7 @@ rgba(0,0,0,0.15) 3px
 pointer-events:none;
 }
 
-/* title glow + flicker */
+/* title glow n flicker */
 
 h1{
 margin-top:80px;
@@ -343,7 +343,7 @@ animation:guestTyping 6s steps(120,end) forwards, cursor 1s infinite;
 /* typing animation */
 @keyframes guestTyping{
 from{width:0}
-to{width:450px} /* adjust width for your text */
+to{width:450px} /* adjust width for text */
 }
 
 /* cursor blink */
