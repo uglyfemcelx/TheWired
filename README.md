@@ -563,7 +563,7 @@ function toggleMusic(){
 
 <div class="line">└────</div>
 
-<a href="https://uglyfemcelx.github.io/deepwired/" class="node">deep_layer</a>
+<a href="https://uglyfemcelx.github.io/deepwiredlogin/" class="node">deep_layer</a>
 
 </div>
 
